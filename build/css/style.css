@@ -534,45 +534,96 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-\[100vh\] {
   height: 100vh;
 }
 
-.w-\[50\%\] {
-  width: 50%;
+.h-\[80vh\] {
+  height: 80vh;
 }
 
-.w-\[40\%\] {
-  width: 40%;
+.h-full {
+  height: 100%;
 }
 
-.items-center {
-  align-items: center;
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[1300px\] {
+  max-width: 1300px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.gap-4 {
+  gap: 1rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .text-6xl {
@@ -718,4 +769,13 @@ nav a {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
 }
+
+/* Section About */
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 
