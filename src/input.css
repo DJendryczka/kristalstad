@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Gabarito', sans-serif;
 }
 
 .splash {
@@ -18,7 +19,7 @@ html {
 nav {
   height: 8vh;
   width: 100%;
-  background-color: #0d220f63;
+  background-color: #0d220f4b;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -45,8 +46,8 @@ ul li {
   border-radius: 2px;
 }
 
-nav a:hover {
-  color: rgb(20, 59, 34);
+nav a:hover{
+  color: coral;
 }
 
 nav a {
@@ -127,6 +128,18 @@ nav a {
     transform: translateX(0px);
   }
 }
+.fade-in {
+  animation: navLinkFade 0.5s ease forwards;
+}
+
+.nav-links li {
+  animation-delay: calc(var(--index) / 7 * 1s + 0.5s);
+}
+
+.reverse-animation {
+  animation-direction: reverse !important; 
+}
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 5px);
 }
@@ -140,5 +153,7 @@ nav a {
 }
 
 /* Section About */
-
+.custom-box-shadow{
+  box-shadow: 3px 5px 10px rgb(94, 90, 90);
+}
 
